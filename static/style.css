@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+    color: #333;
+}
+
+/* Container Card */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Buttons / Links */
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 8px 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: #4f46e5;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #4f46e5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #16a34a;
+    transform: scale(1.02);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Zebra rows */
+tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+/* Hover row */
+tr:hover {
+    background: #eef2ff;
+}
+
+/* Total Page Highlight */
+h1 {
+    font-size: 2.5rem;
+    color: #22c55e;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

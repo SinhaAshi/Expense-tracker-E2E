@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Expense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="container">
+    <h2>Update Expense</h2>
+
+    <table>
+        {% for row in expenses %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>₹{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form method="POST">
+        <input type="number" name="id" placeholder="Enter ID">
+        <input type="number" name="amount" placeholder="New Amount">
+        <input type="text" name="category" placeholder="New Category">
+        <input type="date" name="date">
+
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="/">Back</a>
+</div>
+</body>
+</html>
