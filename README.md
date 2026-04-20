@@ -21,8 +21,7 @@ This project allows users to manage their daily expenses with full CRUD function
 * **Frontend:** HTML, CSS
 * **Backend:** Flask (Python)
 * **Database:** MySQL
-* **Templating Engine:** Jinja2
-
+  
 ---
 
 ## Project Structure
@@ -103,7 +102,7 @@ python app.py
 ---
 
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * User authentication (login/signup)
 * Category-wise expense charts
